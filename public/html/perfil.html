@@ -1,0 +1,50 @@
+<div class="row">
+	<form class="col s12">
+		<div class="row"  ng-show="user.foto">
+			</br>
+			<div class="col s4 m2 offset-s4 offset-m5">
+				<img ng-src="{{user.foto}}" class="circle responsive-img"></img>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">account_circle</i>
+				<input type="text" class="validate" placeholder="Nombre" ng-model="user.nombre">
+				<label ng-class="{ active: user.nombre}">Nombre</label>
+			</div>
+			<div class="input-field col s6">
+				<i class="material-icons prefix">account_circle</i>
+				<input type="text" class="validate" placeholder="Apellido" ng-model="user.apellido">
+				<label ng-class="{ active: user.apellido}">Apellido</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">email</i>
+				<input type="email" class="validate" placeholder="Email" ng-model="user.email">
+				<label ng-class="{ active: user.email}">Email</label>
+			</div>
+			<div class="input-field col s6">
+				<i class="material-icons prefix">perm_identity</i>
+				<input type="text" id="twitter" type="text" class="validate" placeholder="Twitter" ng-model="user.twitter">
+				<label ng-class="{ active: user.twitter}">Twitter</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s6">
+				<i class="material-icons prefix">location_on</i>
+				<input type="text" class="validate" placeholder="Ciudades que prefieres" ng-model="user.ciudades_preferidas">
+				<label ng-class="{ active: user.ciudades_preferidas}">Ciudades que prefieres</label>
+				<ul>
+				</ul>
+			</div>
+			<div class="input-field col s6">
+				<i class="material-icons prefix">location_on</i>
+				<input type="text" class="validate" placeholder="Lugares que has facilitado" ng-model="user.ciudades_facilitadas">
+				<label ng-class="{ active: user.ciudades_facilitadas}">Lugares que has facilitado</label>
+				<ol>
+				</ol>
+			</div>
+		</div>
+	</form>
+</div>

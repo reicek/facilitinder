@@ -1,0 +1,35 @@
+{
+  "name": "facilitinder",
+  "authors": [
+    "reicek <reicek@gmail.com>"
+  ],
+  "description": "Facilitators and events administration system",
+  "main": "index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angularjs",
+    "firebase",
+    "administrator",
+    "facilitinder"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-google-plus": "~0.1.3",
+    "angular-route": "~1.4.8",
+    "angular-google-maps": "~2.2.1",
+    "angularjs-geolocation": "~0.1.1",
+    "Materialize": "materialize#~0.97.3",
+    "angular": "~1.4.8",
+    "angularfire": "~1.1.3"
+  }
+}

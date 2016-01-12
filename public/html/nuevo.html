@@ -1,0 +1,73 @@
+<article class="container">
+	<form class="row">
+		<div class="row"  ng-show="user.foto">
+			</br>
+			<div class="col m12">
+				<h3>Nuevo evento</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">info_outline</i>
+				<input type="text" class="validate" placeholder="Nombre" ng-model="evento.nombre">
+				<label ng-class="{ active: evento.nombre}">Nombre</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">info_outline</i>
+				<input type="text" class="validate" placeholder="Tipo de evento" ng-model="evento.tipo">
+				<label ng-class="{ active: evento.tipo}">Tipo de evento</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">location_on</i>
+				<input type="text" class="validate" placeholder="Pais" ng-model="evento.pais">
+				<label ng-class="{ active: evento.pais}">Pais</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">location_on</i>
+				<input type="text" class="validate" placeholder="Ciudad" ng-model="evento.ciudad">
+				<label ng-class="{ active: evento.ciudad}">Ciudad</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">today</i>
+				<input type="date" class="datepicker" ng-model="evento.fecha">
+				<label class="active">Fecha</label>
+			</div>
+			<div class="input-field col s12 m6">
+				<i class="material-icons prefix">info_outline</i>
+				<input type="text" type="text" class="validate" placeholder="Twitter" ng-model="evento.twitter">
+				<label ng-class="{ active: evento.twitter}">Twitter #hashtag</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12 m4">
+				<select ng-model="evento.presupuesto">
+					<option value="" disabled selected>Choose your option</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<option value="3">Option 3</option>
+					<option value="4">Option 4</option>
+				</select>
+				<label ng-class="{ active: evento.presupuesto}">Rango de presupuesto</label>
+			</div>
+			<div class="input-field col s12 m8">
+				<i class="material-icons prefix">info_outline</i>
+				<textarea id="comentarios" class="materialize-textarea" placeholder="Comentarios" ng-model="evento.comentarios"></textarea>
+				<label for="comentarios" ng-class="{ active: evento.comentarios}">Comentarios</label>
+			</div>
+		</div>
+	</form>
+	<div class="row">
+		<div class="col s2" ng-show="user.nombre">
+			</br>
+			<a href="#/eventos" class="btn-floating btn-large waves-effect waves-light yellow"><i class="material-icons" title="Registrar nuevo evento">not_interested</i></a>
+		</div>
+		<div class="col s2 offset-s8" ng-show="user.nombre">
+			</br>
+			<a class="btn-floating btn-large waves-effect waves-light green" ng-click="agregarEvento()"><i class="material-icons" title="Registrar nuevo evento">done</i></a>
+		</div>
+	</div>
+</artic>

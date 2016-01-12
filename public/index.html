@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="facilitinder">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="shortcut icon" href="img/logo.png">
+  <title>Facilitinder</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="green" role="navigation" ng-controller='UserController'>
+    <div class="nav-wrapper container">
+		<div class="row">
+			<a href="#/"><img src="img/logo.svg" id="logo-container" href="#" class="brand-logo responsive-img "></img></a>
+			<ul class="right hide-on-med-and-down" ng-show="user.nombre">
+				<li><a href="#/perfil"	class="white-text">Perfil</a></li>
+				<li><a href="#/eventos"	class="white-text">Eventos</a></li>
+			</ul>
+
+			<ul id="nav-mobile" class="side-nav">
+				<li><a href="#/perfil">Perfil</a></li>
+				<li><a href="#/eventos">Eventos</a></li>
+				<li><a href="#/nuevo">Nuevo</a></li>
+			</ul>
+			<a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons" ng-show="user.nombre">menu</i></a>
+		</div>
+    </div>
+  </nav>
+  
+  <section>
+    <div ng-view></div>
+  </section>
+
+
+  <!--  Scripts-->
+  <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src='bower_components/Materialize/bin/materialize.js'></script>
+  <script src='bower_components/lodash/lodash.min.js'></script>
+  <script src='bower_components/angular/angular.min.js'></script>
+  <script src='bower_components/angular-route/angular-route.min.js'></script>
+  <script src='bower_components/angular-google-plus/dist/angular-google-plus.min.js'></script>
+  <script src='bower_components/firebase/firebase.js'></script>
+  <script src='bower_components/angularfire/dist/angularfire.min.js'></script>
+  <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+  <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+  <script src='bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js'></script>
+  <script src="js/init.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="js/eventos.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/perfil.js"></script>
+  <script src="js/nuevo.js"></script>
+
+  </body>
+</html>
