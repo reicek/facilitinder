@@ -4,6 +4,8 @@ Facilitinder
 
 This web platform it's aimed to help Startup Weekend match facilitators and events. You can use it at it's [Home page](https://facilitinder.firebaseapp.com/).
 
+This proyect it's fully open source, anyone it's welcome to collaborate or make it's own version of it under [MIT Licence](LICENSE).
+
 Initialize:
 -----------
 
@@ -16,11 +18,13 @@ npm install
 
 This will install all backend dependencies via NPM and all frontend dependencies via bower.
 
-Run server:
------------
+Run local server:
+-----------------
 
 To start the server run the following command from the root folder:
 
 ```
 npm start
 ```
+
+This will launch your local server on port 8080. To see it open your browser and visit [localhost:8080](localhost:8080).
