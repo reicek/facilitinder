@@ -16,20 +16,20 @@ facilitinder.config(function($routeProvider)
 			controller	: 'WelcomeController',
 			templateUrl	: 'html/welcome.html'
 		}).
-		when('/perfil',
+		when('/profile',
 		{
 			controller	: 'PerfilController',
 			templateUrl	: 'html/perfil.html'
 		}).
-		when('/nuevo',
-		{
-			controller	: 'NuevoController',
-			templateUrl	: 'html/nuevo.html'
-		}).
-		when('/eventos',
+		when('/events',
 		{
 			controller	: 'EventosController',
 			templateUrl	: 'html/eventos.html'
+		}).
+		when('/events/new',
+		{
+			controller	: 'NuevoController',
+			templateUrl	: 'html/nuevo.html'
 		}).
 		otherwise({redirectTo:'/welcome'});
 });

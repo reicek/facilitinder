@@ -8,7 +8,7 @@
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="build/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -17,14 +17,13 @@
 		<div class="row">
 			<a href="#/"><img src="img/logo.svg" id="logo-container" href="#" class="brand-logo responsive-img "></img></a>
 			<ul class="right hide-on-med-and-down" ng-show="user.nombre">
-				<li><a href="#/perfil"	class="white-text">Perfil</a></li>
-				<li><a href="#/eventos"	class="white-text">Eventos</a></li>
+				<li><a href="#/profile"	class="white-text">Perfil</a></li>
+				<li><a href="#/events"	class="white-text">Eventos</a></li>
 			</ul>
 
 			<ul id="nav-mobile" class="side-nav">
-				<li><a href="#/perfil">Perfil</a></li>
-				<li><a href="#/eventos">Eventos</a></li>
-				<li><a href="#/nuevo">Nuevo</a></li>
+				<li><a href="#/profile">Perfil</a></li>
+				<li><a href="#/events">Eventos</a></li>
 			</ul>
 			<a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons" ng-show="user.nombre">menu</i></a>
 		</div>
@@ -37,17 +36,7 @@
 
 
   <!--  Scripts-->
-  <script src='bower_components/jquery/dist/jquery.min.js'></script>
-  <script src='bower_components/Materialize/bin/materialize.js'></script>
-  <script src='bower_components/lodash/lodash.min.js'></script>
-  <script src='bower_components/angular/angular.min.js'></script>
-  <script src='bower_components/angular-route/angular-route.min.js'></script>
-  <script src='bower_components/angular-google-plus/dist/angular-google-plus.min.js'></script>
-  <script src='bower_components/firebase/firebase.js'></script>
-  <script src='bower_components/angularfire/dist/angularfire.min.js'></script>
-  <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
-  <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
-  <script src='bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js'></script>
+  <script src='build/scripts.js'></script>
   <script src="js/init.js"></script>
   <script src="js/welcome.js"></script>
   <script src="js/eventos.js"></script>

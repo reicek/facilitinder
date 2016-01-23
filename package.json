@@ -1,0 +1,27 @@
+{
+  "name": "facilitinder",
+  "version": "1.0.1",
+  "description": "Web platform to help matching facilitators and organizers",
+  "main": "server.js",
+  "author": "Cesar Anton Dorantes - reicek@gmail.com",
+  "license": "MIT",
+  "homepage": "https://facilitinder.firebaseapp.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reicek/facilitinder.git"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js",
+    "install": "bower install"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "bower": "^1.7.2",
+    "buildify": "^0.4.0",
+    "firebase-tools": "^2.2.0",
+    "wrench": "^1.5.8"
+  }
+}
