@@ -27,4 +27,4 @@ To start the server run the following command from the root folder:
 npm start
 ```
 
-This will launch your local server on port 8080. To see it open your browser and visit [localhost:8080](localhost:8080).
+This will launch your local server on port 8080. To see it open your browser and visit [localhost:8080](http://localhost:8080).
