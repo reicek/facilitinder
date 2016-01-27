@@ -3,4 +3,4 @@ facilitinder.controller('WelcomeController', function ($scope, GooglePlus, userD
   $scope.user		= userData;
   $('.button-collapse').sideNav();
   $('.parallax').parallax();
-}); 
+});

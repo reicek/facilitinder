@@ -57,15 +57,14 @@ module.exports = function(grunt) {
       }
     },
 	watch: {
-	  // Watch CSS changes
-      files: ['public/css/*.css'], 
-      tasks: ['cssmin'],
-	  // Watch JS changes
-      scripts: { 
-        files: 'public/js/*.js', 
-        tasks: ['jshint', 'concat'] 
-      } 
-}
+	  // Watch files for changes
+      files: ['public/index.html','public/html/*','public/css/*','public/js/*','public/img/*','public/font/*'], 
+      tasks: ['jshint','concat','cssmin'],
+      options: {
+        // Start a live reload server on the default port 35729. Requires browser extension, download at: http://livereload.com/extensions/
+        livereload: true,
+      },
+    }
   });
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
