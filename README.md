@@ -36,7 +36,7 @@ Editing the Source Code
 ###### (Re)Building files
 -------------------------
 
-If you wish to *make changes* to the source files you will need to *test and concatenate* the JS and CSS files each time you change something but dont' worry, Falicitinder comes ready to do all this automatically for you using [Grunt](gruntjs.com) tasks.
+If you wish to **make changes** to the source files you will need to **test and concatenate** the JS and CSS files each time you change something but dont' worry, Falicitinder comes ready to do all this automatically for you using [Grunt](gruntjs.com) tasks.
 
 To test and concatenate all your JS and CSS files simply run the following command from the root folder:
 
@@ -48,7 +48,7 @@ After doing all tasks it will keep watching for changes on the JS and CSS files 
 
 Alternatively you can run specific tasks if you wish:
 
-###### Testing JS files
+###### Linting JS files
 -----------------------
 
 ```
