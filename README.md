@@ -62,32 +62,32 @@ This will test (lint) all your JS for errors in the code.
 ###### Concatenating JS
 -----------------------
 
+This will concatenate all JS libraries and custom scripts.
+
 ```
 grunt concat
 ```
-
-This will concatenate all JS libraries and custom scripts.
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-concat)*
 
 ###### Minifying CSS
 --------------------
 
+This will minify and concatenate all CSS files.
+
 ```
 grunt cssmin
 ```
-
-This will minify and concatenate all CSS files.
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-cssmin)*
 
 ###### Watching for changes
 ---------------------------
 
+This will run all tasks when there is a change to the CSS or JS files.
+
 ```
 grunt watch
 ```
-
-This will run all tasks when there is a change to the CSS or JS files.
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-watch)*
