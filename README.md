@@ -33,7 +33,7 @@ This will launch your local server on port 8080. To see it open your browser and
 
 Build files
 ----------------------------
-###### Editing the source code
+##### Editing the source code
 
 If you wish to *make changes* to the source files you will need to *test and concatenate* the JS and CSS files each time you change something but dont' worry, Falicitinder comes ready to do all this automatically for you using [Grunt](gruntjs.com) tasks.
 
@@ -47,6 +47,9 @@ After doing all tasks it will keep watching for changes on the JS and CSS files 
 
 Alternatively you can run specific tasks if you wish:
 
+###### Testing JS files
+-----------------------
+
 ```
 grunt jshint
 ```
@@ -54,6 +57,9 @@ grunt jshint
 This will test (lint) all your JS for errors in the code.
 
 [https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+
+###### Concatenating JS
+---------------------------------------------------
 
 ```
 grunt concat
@@ -63,6 +69,9 @@ This will concatenate all JS libraries and custom scripts.
 
 [https://github.com/gruntjs/grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
 
+###### Minifying CSS
+--------------------
+
 ```
 grunt cssmin
 ```
@@ -70,6 +79,9 @@ grunt cssmin
 This will minify and concatenate all CSS files.
 
 [https://github.com/gruntjs/grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
+
+###### Watching for changes
+---------------------------
 
 ```
 grunt watch
