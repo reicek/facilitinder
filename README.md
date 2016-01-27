@@ -4,7 +4,7 @@ Facilitinder
 
 This web platform it's aimed to help Startup Weekend match facilitators and events. You can use it at it's [Home page](https://facilitinder.firebaseapp.com/).
 
-This proyect it's fully open source under [MIT Licence](LICENSE), anyone it's welcome to collaborate or make it's own version of it.
+This project it's fully open source under [MIT Licence](LICENSE), anyone it's welcome to collaborate or make it's own version of it.
 
 Facilitinder comes pre-built with the latest stable version, if you wish to test it locally simply follow the steps described at the Initialize and Run Local Server sections.
 
