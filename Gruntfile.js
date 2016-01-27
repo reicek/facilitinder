@@ -43,6 +43,18 @@ module.exports = function(grunt) {
         dest: 'public/build/libs-scripts.min.js'
       },
     },
+	copy: {
+      main: {
+		files: [
+		  {
+		    expand: true, 
+		    cwd: 'bower_components/Materialize/dist/font/', 
+			src: '**',
+		    dest: 'public/font/'
+		  }
+		]
+      }
+	},
 	cssmin: {
       options: {
         banner: '// <%= pkg.name %> - <%= pkg.version %> @ <%= grunt.template.today("yyyy-mm-dd") %>'
@@ -71,6 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
   
-  grunt.registerTask('default', ['jshint','concat','cssmin','watch']); 
+  grunt.registerTask('default', ['jshint','concat','cssmin','copy','watch']); 
 };

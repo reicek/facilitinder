@@ -84,9 +84,9 @@ grunt cssmin
 ###### Watching for changes
 ---------------------------
 
-This will run all tasks when there is a change to the CSS or JS files and automatically reload your browser when everything it's ready.
+This will run all tasks when there is a change to the CSS or JS files and automatically reload your browser when everything it's ready. If the linting process detects any flaw it will describe it in the console log and will not rebuild the source files until all the code is error-free.
 
-To enable browser auto-reload you must **install [livereload browser extension](http://livereload.com/extensions/)**, once installed click on the icon to enable it. The watch task must be running **before** you enable the extension; if you disable the task for some reason, you might have to restart (off-on) the extension.
+To enable browser auto-reload you must **install [livereload browser extension](http://livereload.com/extensions/)**, once installed click on the icon to enable it. The watch task must be running before you enable the extension; if you disable the task for some reason, you might have to restart (off-on) the extension.
 
 ```
 grunt watch
