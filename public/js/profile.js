@@ -1,6 +1,5 @@
-'use strict';
-
 facilitinder.controller('ProfileController', function ($scope, routeTest, userData) {
-  routeTest; 
+  'use strict';
+  routeTest; // jshint ignore:line
   $scope.user  = userData;
-}); 
+});

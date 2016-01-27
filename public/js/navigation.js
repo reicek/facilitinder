@@ -1,15 +1,14 @@
-'use strict';
-
 facilitinder.service('routeTest', function ($location, userData) {
+  'use strict';
   if (userData.nombre) {
-    return
+    return;
   } else {
     return $location.path('/');
-  };
+  }
 }); 
 
-facilitinder.config(function($routeProvider)
-{
+facilitinder.config(function($routeProvider) {
+  'use strict';
   $routeProvider.
     when('/welcome', {
       controller	: 'WelcomeController',

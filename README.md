@@ -6,6 +6,8 @@ This web platform it's aimed to help Startup Weekend match facilitators and even
 
 This proyect it's fully open source under [MIT Licence](LICENSE), anyone it's welcome to collaborate or make it's own version of it.
 
+Facilitinder comes pre-built with the latest stable version, if you wish to test it locally simply follow the steps described at the Initialize and Run Local Server sections.
+
 Initialize:
 -----------
 
@@ -18,7 +20,7 @@ npm install
 
 This will install all backend dependencies via NPM and all frontend dependencies via bower.
 
-Run local server:
+Run Local Server:
 -----------------
 
 To start the server run the following command from the root folder:
@@ -28,3 +30,50 @@ npm start
 ```
 
 This will launch your local server on port 8080. To see it open your browser and visit [localhost:8080](http://localhost:8080).
+
+Build files - for developers
+----------------------------
+
+If you wish to *make changes* to the source files you will need to *test and concatenate* the JS and CSS files each time you change something but dont' worry, Falicitinder comes ready to do all this automatically for you using [Grunt](gruntjs.com) tasks.
+
+To test and concatenate all your JS and CSS files simply run the following command from the root folder:
+
+```
+grunt
+```
+
+After doing all tasks it will keep watching for changes on the JS and CSS files and will re-build everything everytime you change something <3
+
+Alternatively you can run specific tasks if you wish:
+
+```
+grunt jshint
+```
+
+This will test (lint) all your JS for errors in the code.
+
+[https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
+
+```
+grunt concat
+```
+
+This will concatenate all JS libraries and custom scripts.
+
+[https://github.com/gruntjs/grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
+
+```
+grunt cssmin
+```
+
+This will minify and concatenate all CSS files.
+
+[https://github.com/gruntjs/grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
+
+```
+grunt watch
+```
+
+This will run all tasks when there is a change to the CSS or JS files.
+
+[https://github.com/gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)

@@ -1,6 +1,5 @@
-'use strict';
-
 facilitinder.config(function(uiGmapGoogleMapApiProvider) {
+  'use strict';
   uiGmapGoogleMapApiProvider.configure({
     key       : 'AIzaSyAMS8_CXrNWArLErVQh_o168U_jvOqc6tQ',
     v         : '3.20',
@@ -9,7 +8,8 @@ facilitinder.config(function(uiGmapGoogleMapApiProvider) {
 });
 
 facilitinder.controller('EventsController', function ($scope, $firebaseArray, uiGmapGoogleMapApi, routeTest, userData, geolocation, eventosDataRef) {
-  routeTest;
+  'use strict';
+  routeTest; // jshint ignore:line
   $scope.user			= userData;
   $scope.eventos		= $firebaseArray(eventosDataRef);
 	

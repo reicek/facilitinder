@@ -1,6 +1,5 @@
-'use strict';
-
 facilitinder.factory('userData', function () {
+  'use strict';
   var user     = {
     nombre         : '',
     apellido       : '',
@@ -16,10 +15,12 @@ facilitinder.factory('userData', function () {
 }); 
 
 facilitinder.controller('UserController', function ($scope, userData) {
+  'use strict';
   $scope.user 	= userData;
 }); 
 
 facilitinder.controller('AuthCtrl', function ($scope, GooglePlus, userData) {
+  'use strict';
   $scope.login 	= function () {
   GooglePlus.login().then(function (authResult) {
 //  console.log(authResult);
@@ -40,6 +41,7 @@ facilitinder.controller('AuthCtrl', function ($scope, GooglePlus, userData) {
 });
 
 facilitinder.config(['GooglePlusProvider', function(GooglePlusProvider) {
+  'use strict';
   GooglePlusProvider.init({
     clientId	: '921475310202-hhvfv5glqt0vqm8nohq4da284s6c510s.apps.googleusercontent.com',
     apiKey		: 'AIzaSyAMS8_CXrNWArLErVQh_o168U_jvOqc6tQ'

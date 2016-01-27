@@ -19,9 +19,14 @@
     "express": "^4.13.3"
   },
   "devDependencies": {
-    "bower": "^1.7.2",
-    "buildify": "^0.4.0",
-    "firebase-tools": "^2.2.0",
-    "wrench": "^1.5.8"
+    "bower": "latest",
+    "firebase-tools": "latest",
+    "grunt": "latest",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "latest",
+    "grunt-contrib-imagemin": "latest",
+    "grunt-contrib-jshint": "latest",
+    "grunt-contrib-watch": "latest",
+    "jshint-stylish": "latest"
   }
 }

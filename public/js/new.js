@@ -1,7 +1,5 @@
-'use strict';
-
 facilitinder.controller('NewController', function ($scope, $firebaseArray, routeTest, userData, nuevoEvento, eventosDataRef) {
-  routeTest;
+  'use strict';
   $scope.user                = userData;
   $scope.evento              = nuevoEvento;
   var eventosData            = $firebaseArray(eventosDataRef);
@@ -19,4 +17,4 @@ facilitinder.controller('NewController', function ($scope, $firebaseArray, route
       Materialize.toast($done, 5000);
     });
   };
-}); 
+});
