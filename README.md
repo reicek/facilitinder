@@ -32,8 +32,9 @@ npm start
 This will launch your local server on port 8080. To see it open your browser and visit [localhost:8080](http://localhost:8080).
 
 Editing the Source Code
-----------------------------
+-----------------------
 ###### (Re)Building files
+-------------------------
 
 If you wish to *make changes* to the source files you will need to *test and concatenate* the JS and CSS files each time you change something but dont' worry, Falicitinder comes ready to do all this automatically for you using [Grunt](gruntjs.com) tasks.
 
@@ -59,7 +60,7 @@ This will test (lint) all your JS for errors in the code.
 [https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)
 
 ###### Concatenating JS
----------------------------------------------------
+-----------------------
 
 ```
 grunt concat
