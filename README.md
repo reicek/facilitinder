@@ -57,7 +57,7 @@ grunt jshint
 
 This will test (lint) all your JS for errors in the code.
 
-<small>Learn more at: [https://github.com/gruntjs/grunt-contrib-jshint](https://github.com/gruntjs/grunt-contrib-jshint)</small>
+*[Documentation](https://github.com/gruntjs/grunt-contrib-jshint)*
 
 ###### Concatenating JS
 -----------------------
@@ -68,7 +68,7 @@ grunt concat
 
 This will concatenate all JS libraries and custom scripts.
 
-<small>Learn more at: [https://github.com/gruntjs/grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)</small>
+*[Documentation](https://github.com/gruntjs/grunt-contrib-concat)*
 
 ###### Minifying CSS
 --------------------
@@ -79,7 +79,7 @@ grunt cssmin
 
 This will minify and concatenate all CSS files.
 
-<small>Learn more at: [https://github.com/gruntjs/grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)</small>
+*[Documentation](https://github.com/gruntjs/grunt-contrib-cssmin)*
 
 ###### Watching for changes
 ---------------------------
@@ -90,4 +90,4 @@ grunt watch
 
 This will run all tasks when there is a change to the CSS or JS files.
 
-<small>Learn more at: [https://github.com/gruntjs/grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)</small>
+*[Documentation](https://github.com/gruntjs/grunt-contrib-watch)*
