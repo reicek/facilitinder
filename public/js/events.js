@@ -15,10 +15,10 @@
 	  });
 	});
 
-	facilitinder.controller('EventsController',['$scope', '$firebaseArray', 'uiGmapGoogleMapApi', 'routeTest', 'userData', 'geolocation', 'eventsDataRefFactory', function ($scope, $firebaseArray, uiGmapGoogleMapApi, routeTest, userData, geolocation, eventsDataRefFactory) {
+	facilitinder.controller('EventsController',['$scope', 'uiGmapGoogleMapApi', 'routeTest', 'userData', 'geolocation', 'eventsFactory', function ($scope, uiGmapGoogleMapApi, routeTest, userData, geolocation, eventsFactory) {
 	  routeTest; // jshint ignore:line
 	  $scope.user     = userData;
-	  $scope.eventos  = $firebaseArray(eventsDataRefFactory);
+	  $scope.eventos  = eventsFactory;
 		
 	  uiGmapGoogleMapApi.then(function(maps) {
 		$scope.map      = { center: { latitude: 37.422, longitude: -122.084 }, zoom: 8 };
@@ -36,11 +36,10 @@
 	  });
 	}]); 
 	
-	facilitinder.controller('NewEventController',['$scope', '$firebaseArray', 'routeTest', 'userData', 'newEventFactory', 'eventsDataRefFactory', function ($scope, $firebaseArray, routeTest, userData, newEventFactory, eventsDataRefFactory) {
+	facilitinder.controller('NewEventController',['$scope', 'routeTest', 'userData', 'newEventFactory', 'eventsFactory', function ($scope, routeTest, userData, newEventFactory, eventsFactory) {
 	  $scope.user                = userData;
 	  $scope.evento              = newEventFactory;
-	  var eventosData            = $firebaseArray(eventsDataRefFactory);
-	  $scope.eventos             = eventosData;
+	  $scope.eventos             = eventsFactory;
 		
 	  $scope.agregarEvento       = function() {
 	//  console.log($scope.evento)

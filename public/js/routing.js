@@ -19,18 +19,22 @@
 	  $routeProvider.
 		when('/welcome', {
 		  controller	: 'WelcomeController',
+		  contollerAs   : 'welcomeCtrl',
 		  templateUrl	: 'html/welcome.html'
 		}).
 		when('/profile', {
 		  controller	: 'ProfileController',
+		  contollerAs   : 'profileCtrl',
 		  templateUrl	: 'html/profile.html'
 		}).
 		when('/events', {
 		  controller	: 'EventsController',
+		  contollerAs   : 'eventsCtrl',
 		  templateUrl	: 'html/events.html'
 		}).
 		when('/events/new',  {
 		  controller	: 'NewEventController',
+		  contollerAs   : 'newEventCtrl',
 		  templateUrl	: 'html/newEvent.html'
 		}).
 		otherwise({redirectTo:'/welcome'});

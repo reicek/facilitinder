@@ -6,12 +6,17 @@
 ( function(){
 	'use strict';
 	var facilitinder = angular.module( 'facilitinder-nav' , [] );
+
+	facilitinder.controller('UserController', function (userData) {
+	  this.user 	= userData;
+	}); 
 	
 	facilitinder.directive('facilitinderNav', function(){
       return {
         restrict : 'E',
         templateUrl : 'html/nav.html',
-        controller : 'UserController'
+        controller : 'UserController',
+		controllerAs: 'loginData'
 	  };
 	});
 	

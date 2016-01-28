@@ -6,10 +6,6 @@
 ( function(){
 	'use strict';
 	var facilitinder = angular.module( 'facilitinder-login' , ['googleplus'] );
-
-	facilitinder.controller('UserController', function ($scope, userData) {
-	  $scope.user 	= userData;
-	}); 
 	
 	facilitinder.controller('ProfileController', function ($scope, routeTest, userData) {
 	  routeTest; // jshint ignore:line

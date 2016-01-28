@@ -7,10 +7,10 @@
 	'use strict';
 	var facilitinder = angular.module( 'facilitinder-factories' , ['firebase'] );
 
-	facilitinder.factory('eventsDataRefFactory', ['$firebaseArray', function ($firebaseArray) {
-		var ref						= new Firebase("https://facilitinder.firebaseio.com/events");
+	facilitinder.factory('eventsFactory', ['$firebaseArray', function ($firebaseArray) {
+		var ref      = new Firebase("https://facilitinder.firebaseio.com/events");
 		
-		return ref;
+		return $firebaseArray(ref);
 	}]);
 
 	facilitinder.factory('newEventFactory', function () {
