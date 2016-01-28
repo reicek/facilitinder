@@ -33,12 +33,11 @@ module.exports = function(grunt) {
           'bower_components/angular-google-maps/dist/angular-google-maps.min.js',
           'bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js',
           'public/js/init.js',
+          'public/js/factories.js',
           'public/js/welcome.js',
           'public/js/events.js',
           'public/js/login.js',
-          'public/js/navigation.js',
-          'public/js/profile.js',
-		  'public/js/new.js'
+          'public/js/routing.js'
 		],
         dest: 'public/build/libs-scripts.min.js'
       },

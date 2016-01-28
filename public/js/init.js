@@ -1,22 +1,14 @@
-var facilitinder = angular.module( 'facilitinder' , ['ngRoute','googleplus','uiGmapgoogle-maps','geolocation','firebase'] );
-
-facilitinder.factory('eventosDataRef', function ($scope, $firebaseArray) {
-  'use strict';
-	var ref						= new Firebase("https://facilitinder.firebaseio.com/facilitadores");
-	
-	return ref;
-});
-
-facilitinder.factory('eventosDataRef', function ($firebaseArray) {
-  'use strict';
-	var ref = new Firebase("https://facilitinder.firebaseio.com/eventos");
-	
-	return ref;
-});
-
-facilitinder.factory('nuevoEvento', function () {
-  'use strict';
-	var nuevoEvento		= {};
-	
-	return nuevoEvento;
-});
+// *****************************************
+//   init.js - Facilitinder
+//   2015, by Cesar Anton Dorantes @reicek
+//   for facilitinder proyect
+// *****************************************
+( function(){
+	var facilitinder = angular.module( 'facilitinder' , [
+	  'facilitinder-routing',
+	  'facilitinder-factories',
+	  'facilitinder-login',
+	  'facilitinder-welcome',
+	  'facilitinder-events'
+	] );
+} )()

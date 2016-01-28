@@ -4,7 +4,7 @@
     "reicek <reicek@gmail.com>"
   ],
   "description": "Facilitators and events administration system",
-  "main": "index.html",
+  "main": "public/index.html",
   "moduleType": [
     "node"
   ],

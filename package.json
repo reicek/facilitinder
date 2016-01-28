@@ -1,6 +1,6 @@
 {
   "name": "facilitinder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Web platform to help matching facilitators and organizers",
   "main": "server.js",
   "author": "Cesar Anton Dorantes - reicek@gmail.com",
