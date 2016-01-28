@@ -48,6 +48,8 @@ After doing all tasks it will keep watching for changes on the JS and CSS files 
 
 Alternatively you can run specific tasks if you wish:
 
+-----------------------
+
 ###### Linting JS files
 -----------------------
 
@@ -58,6 +60,8 @@ grunt jshint
 This will test (lint) all your JS for errors in the code.
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-jshint)*
+
+-----------------------
 
 ###### Concatenating JS
 -----------------------
@@ -70,6 +74,8 @@ grunt concat
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-concat)*
 
+--------------------
+
 ###### Minifying CSS
 --------------------
 
@@ -80,6 +86,8 @@ grunt cssmin
 ```
 
 *[Tool documentation](https://github.com/gruntjs/grunt-contrib-cssmin)*
+
+---------------------------
 
 ###### Watching for changes
 ---------------------------
