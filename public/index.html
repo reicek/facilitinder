@@ -12,23 +12,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="green" role="navigation" ng-controller='UserController'>
-    <div class="nav-wrapper container">
-		<div class="row">
-			<a href="#/"><img src="img/logo.svg" id="logo-container" href="#" class="brand-logo responsive-img "></img></a>
-			<ul class="right hide-on-med-and-down" ng-show="user.nombre">
-				<li><a href="#/profile"	class="white-text">Perfil</a></li>
-				<li><a href="#/events"	class="white-text">Eventos</a></li>
-			</ul>
-
-			<ul id="nav-mobile" class="side-nav">
-				<li><a href="#/profile">Perfil</a></li>
-				<li><a href="#/events">Eventos</a></li>
-			</ul>
-			<a href="#" data-activates="nav-mobile" class="button-collapse white-text"><i class="material-icons" ng-show="user.nombre">menu</i></a>
-		</div>
-    </div>
-  </nav>
+  <facilitinder-nav></facilitinder-nav>
   
   <section>
     <div ng-view></div>

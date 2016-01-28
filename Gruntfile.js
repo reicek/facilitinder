@@ -37,6 +37,7 @@ module.exports = function(grunt) {
           'public/js/routing.js',
           'public/js/factories.js',
           'public/js/login.js',
+          'public/js/nav.js',
           'public/js/welcome.js',
           'public/js/events.js'
 		],

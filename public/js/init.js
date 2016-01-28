@@ -8,6 +8,7 @@
 	  'facilitinder-routing',
 	  'facilitinder-factories',
 	  'facilitinder-login',
+	  'facilitinder-nav',
 	  'facilitinder-welcome',
 	  'facilitinder-events'
 	] );
