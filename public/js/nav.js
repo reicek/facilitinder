@@ -7,7 +7,7 @@
 	'use strict';
 	var facilitinder = angular.module( 'facilitinder-nav' , [] );
 
-	facilitinder.controller('UserController', function (userData) {
+	facilitinder.controller('navController', function (userData) {
 	  this.user 	= userData;
 	}); 
 	
@@ -15,8 +15,8 @@
       return {
         restrict : 'E',
         templateUrl : 'html/nav.html',
-        controller : 'UserController',
-		controllerAs: 'loginData'
+        controller : 'navController',
+		controllerAs: 'navCtrl'
 	  };
 	});
 	

@@ -12,13 +12,13 @@
 	  $scope.user  = userData;
 	});
 
-	facilitinder.controller('AuthCtrl', function ($scope, GooglePlus, userData) {
-	  $scope.login 	= function () {
-	  GooglePlus.login().then(function (authResult) {
-	//  console.log(authResult);
+	facilitinder.controller('AuthController', function (GooglePlus, userData) {
+	  this.login 	= function () {
+	    GooglePlus.login().then(function (authResult) {
+//        console.log(authResult);
 
-		GooglePlus.getUser().then(function (data) {
-	//    console.log(data);
+		  GooglePlus.getUser().then(function (data) {
+//          console.log(data);
 			var $welcome			= $('<span>Bienvenido '+data.name+'<img ng-show="user.imagen" src="'+data.picture+'" class="circle responsive-img" style="height:4em"><span>');
 			Materialize.toast($welcome, 5000);
 			userData.nombre			= data.given_name;

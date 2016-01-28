@@ -2,8 +2,8 @@
   <div class="section no-pad-bot">
 	<div class="container">
 	  <h1 class="header center green-text text-lighten-2">Facilitinder</h1>
-	  <div class="row center" ng-controller="AuthCtrl">
-		<a  href="javascript:void(0);" id="login" ng-click="login()" class="btn-large waves-effect waves-light red" ng-hide="user.nombre">Sign in</a>
+	  <div class="row center" ng-controller="AuthController as authCtrl">
+		<a  href="javascript:void(0);" id="login" ng-click="authCtrl.login()" class="btn-large waves-effect waves-light red" ng-hide="user.nombre">Sign in</a>
 	  </div>
 	</div>
   </div>

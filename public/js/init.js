@@ -10,6 +10,7 @@
 	  'facilitinder-login',
 	  'facilitinder-nav',
 	  'facilitinder-welcome',
+	  'facilitinder-profile',
 	  'facilitinder-events'
 	] );
 } )();
