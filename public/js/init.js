@@ -11,4 +11,4 @@
 	  'facilitinder-welcome',
 	  'facilitinder-events'
 	] );
-} )()
+} )();
